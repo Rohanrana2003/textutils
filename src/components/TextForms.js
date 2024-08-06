@@ -4,18 +4,18 @@ export default function TextForms(props) {
     const HandleUpClick = () =>{
         let newText = text.toUpperCase();
         setText(newText );
-        props.showAlert("Converted to UpperCase", "success");
+        // props.showAlert("Converted to UpperCase", "success");
     }
     const HandleLoClick = () =>{
       let newText = text.toLowerCase();
       setText(newText );
-      props.showAlert("Converted to LowerCase", "success");
+      // props.showAlert("Converted to LowerCase", "success");
 
   }
     const HandleClClick = () =>{
       let newText = "";
       setText(newText );
-      props.showAlert("Text Cleared", "success");
+      // props.showAlert("Text Cleared", "success");
 
   }
 
@@ -23,7 +23,7 @@ export default function TextForms(props) {
     var text = document.getElementById("myBox");
     text.select();
     navigator.clipboard.writeText(text.value);
-    props.showAlert("Text Copied", "success");
+    // props.showAlert("Text Copied", "success");
 
   }
   
@@ -37,7 +37,7 @@ export default function TextForms(props) {
       // Converting array to string 
       let newText = strArr.join("");
       setText(newText);
-      props.showAlert("Text Reversed", "success");
+      // props.showAlert("Text Reversed", "success");
 
 
   };
@@ -45,7 +45,7 @@ export default function TextForms(props) {
   const HandleExtraSpaces = () =>{
     let newText = text.split(/[ ]+/);
     setText(newText.join(" "));
-    props.showAlert("Spaces Handeled", "success");
+    // props.showAlert("Spaces Handeled", "success");
 
   }
 

@@ -1,7 +1,7 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import TextForms from "./components/TextForms";
-import Alert from "./components/Alert";
+// import Alert from "./components/Alert";
 import { useState } from "react";
 
 
@@ -73,9 +73,9 @@ function App() {
   return (
     <>
       <Navbar title ='TextUtils' mode ={mode} toggleMode = {toggleMode} toggle2Mode ={toggle2Mode} toggle3Mode ={toggle3Mode}/>
-      <Alert alert ={alert}/>
+      {/* <Alert alert ={alert}/> */}
         <div className="container my-3">
-          <TextForms showAlert = {showAlert} heading='Enter the text to analyze below' mode = {mode}/>    
+          <TextForms  heading='Enter the text to analyze below' mode = {mode}/>    
         </div>
     </>
   );
